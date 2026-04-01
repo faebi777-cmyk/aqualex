@@ -1394,6 +1394,29 @@ a.service-card.service-link:hover {
     border: 1px solid var(--glass-border);
 }
 
+.footer-map-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--glass-bg);
+    text-decoration: none;
+    color: var(--accent);
+    transition: all 0.3s ease;
+}
+
+.footer-map-link:hover {
+    background: rgba(0, 212, 170, 0.08);
+}
+
+.footer-map-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
 .footer-nav-legal {
     border-top: 1px solid var(--glass-border);
     padding: 30px 0;
