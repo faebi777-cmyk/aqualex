@@ -247,7 +247,124 @@
 
             <!-- Spalatorie Tab -->
             <div class="pricing-tab active" id="tab-spalatorie">
-                <div class="pricing-grid">
+                <!-- ADDED: Accordion - Mobile view -->
+                <div class="pricing-accordion">
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-car"></i>
+                                <span>Autoturism</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">70 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">40 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">50 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-car-side"></i>
+                                <span>SUV Mic</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">75 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">40 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">55 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-truck-monster"></i>
+                                <span>SUV</span>
+                            </div>
+                            <span class="accordion-badge">Popular</span>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">80 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">40 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">60 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-truck-pickup"></i>
+                                <span>Jeep / Pickup</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">85 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">35 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">70 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-truck-pickup"></i>
+                                <span>Jeep / Pickup Mare</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">100 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">40 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">80 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-van-shuttle"></i>
+                                <span>Autoutilitară</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">75 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">40 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">55 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-bus"></i>
+                                <span>Mini Bus 8+1</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">100 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">60 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">60 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-bus"></i>
+                                <span>Mini Bus Marfă</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Interior / Exterior</span><span class="price">90 lei</span></div>
+                            <div class="price-row"><span>Interior</span><span class="price">50 lei</span></div>
+                            <div class="price-row"><span>Exterior</span><span class="price">60 lei</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop view (hidden on mobile) -->
+                <div class="pricing-grid pricing-desktop">
                     <div class="price-card" data-aos="fade-up">
                         <div class="price-header">
                             <div class="price-icon"><i class="fas fa-car"></i></div>
@@ -414,7 +531,97 @@
 
             <!-- Tapiterie Tab -->
             <div class="pricing-tab" id="tab-tapiterie">
-                <div class="pricing-grid">
+                <!-- ADDED: Accordion - Mobile view -->
+                <div class="pricing-accordion">
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-car"></i>
+                                <span>Autoturisme</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Curățare integrală</span><span class="price">600 lei</span></div>
+                            <div class="price-row"><span>Scaun / buc (30 min)</span><span class="price">70 lei</span></div>
+                            <div class="price-row"><span>Portiere / buc (20 min)</span><span class="price">50 lei</span></div>
+                            <div class="price-row"><span>Podea / mochetă (2 ore)</span><span class="price">200 lei</span></div>
+                            <div class="price-row"><span>Portbagaj (1 oră)</span><span class="price">100 lei</span></div>
+                            <div class="price-row"><span>Bord (1 oră)</span><span class="price">100 lei</span></div>
+                            <div class="price-row"><span>Degresat geamuri / buc</span><span class="price">25 lei</span></div>
+                            <div class="price-row"><span>Polish faruri / buc</span><span class="price">60 lei</span></div>
+                            <div class="price-row"><span>Tratament piele</span><span class="price">300 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-car-side"></i>
+                                <span>SUV Mic</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Curățare integrală</span><span class="price">700 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-truck-monster"></i>
+                                <span>SUV</span>
+                            </div>
+                            <span class="accordion-badge">SUV</span>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Curățare integrală</span><span class="price">800 lei</span></div>
+                            <div class="price-row"><span>Scaun / buc (30 min)</span><span class="price">80 lei</span></div>
+                            <div class="price-row"><span>Portiere / buc (20 min)</span><span class="price">60 lei</span></div>
+                            <div class="price-row"><span>Podea / mochetă (2 ore)</span><span class="price">300 lei</span></div>
+                            <div class="price-row"><span>Portbagaj (1 oră)</span><span class="price">150 lei</span></div>
+                            <div class="price-row"><span>Bord (1 oră)</span><span class="price">150 lei</span></div>
+                            <div class="price-row"><span>Degresat geamuri / buc</span><span class="price">25 lei</span></div>
+                            <div class="price-row"><span>Polish faruri / buc</span><span class="price">60 lei</span></div>
+                            <div class="price-row"><span>Tratament piele</span><span class="price">400 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-van-shuttle"></i>
+                                <span>Furgonetă tip Papuc</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Curățare integrală</span><span class="price">400 lei</span></div>
+                            <div class="price-row"><span>Scaun / buc (30 min)</span><span class="price">70 lei</span></div>
+                            <div class="price-row"><span>Portiere / buc (20 min)</span><span class="price">50 lei</span></div>
+                            <div class="price-row"><span>Bord (1 oră)</span><span class="price">100 lei</span></div>
+                            <div class="price-row"><span>Degresat geamuri / buc</span><span class="price">25 lei</span></div>
+                            <div class="price-row"><span>Polish faruri / buc</span><span class="price">60 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-bus"></i>
+                                <span>Microbus 8+1</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Scaun / buc (30 min)</span><span class="price">80 lei</span></div>
+                            <div class="price-row"><span>Portiere / buc (20 min)</span><span class="price">60 lei</span></div>
+                            <div class="price-row"><span>Bord (1 oră)</span><span class="price">150 lei</span></div>
+                            <div class="price-row"><span>Degresat geamuri / buc</span><span class="price">25 lei</span></div>
+                            <div class="price-row"><span>Polish faruri / buc</span><span class="price">60 lei</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop view (hidden on mobile) -->
+                <div class="pricing-grid pricing-desktop">
                     <div class="price-card" data-aos="fade-up">
                         <div class="price-header">
                             <div class="price-icon"><i class="fas fa-car"></i></div>
@@ -581,7 +788,53 @@
 
             <!-- Extra Tab -->
             <div class="pricing-tab" id="tab-extra">
-                <div class="pricing-grid pricing-grid-compact">
+                <!-- ADDED: Accordion - Mobile view -->
+                <div class="pricing-accordion">
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-gear"></i>
+                                <span>Spălare Motor</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-note">Pe răspunderea clientului</div>
+                            <div class="price-row"><span>Autoturisme</span><span class="price">50 lei</span></div>
+                            <div class="price-row"><span>Alte categorii</span><span class="price">70 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-motorcycle"></i>
+                                <span>Motociclete & ATV</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Motocicletă</span><span class="price">40 lei</span></div>
+                            <div class="price-row"><span>Scuter</span><span class="price">30 lei</span></div>
+                            <div class="price-row"><span>ATV</span><span class="price">50 lei</span></div>
+                            <div class="price-row"><span>Skijet</span><span class="price">40 lei</span></div>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <button class="accordion-header">
+                            <div class="accordion-header-content">
+                                <i class="fas fa-plus"></i>
+                                <span>Extra</span>
+                            </div>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="price-row"><span>Mașină foarte murdară (extra)</span><span class="price">30 lei</span></div>
+                            <div class="price-row"><span>Roată rezervă / buc</span><span class="price">5 lei</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop view (hidden on mobile) -->
+                <div class="pricing-grid pricing-grid-compact pricing-desktop">
                     <div class="price-card" data-aos="fade-up">
                         <div class="price-header">
                             <div class="price-icon"><i class="fas fa-gear"></i></div>
@@ -919,6 +1172,12 @@
     <button id="back-to-top" class="back-to-top" aria-label="Înapoi sus">
         <i class="fas fa-chevron-up"></i>
     </button>
+
+    <!-- ADDED: Sticky CTA - Mobile only -->
+    <a href="tel:0722440550" id="sticky-cta" class="sticky-cta">
+        <i class="fas fa-phone"></i>
+        <span>Programează-te telefonic</span>
+    </a>
 
     <script src="script.js"></script>
 </body>

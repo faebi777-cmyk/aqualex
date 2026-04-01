@@ -290,6 +290,40 @@ contactForm.addEventListener('submit', (e) => {
     }, 3000);
 });
 
+// ADDED: Accordion
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const group = header.parentElement;
+        const body = group.querySelector('.accordion-body');
+        const isActive = group.classList.contains('active');
+        
+        // Close all accordions in the same tab
+        const tab = group.closest('.pricing-tab');
+        tab.querySelectorAll('.accordion-group.active').forEach(openGroup => {
+            openGroup.classList.remove('active');
+            openGroup.querySelector('.accordion-body').style.maxHeight = null;
+        });
+        
+        // Toggle current
+        if (!isActive) {
+            group.classList.add('active');
+            body.style.maxHeight = body.scrollHeight + 'px';
+        }
+    });
+});
+
+// ADDED: Sticky CTA
+const stickyCta = document.getElementById('sticky-cta');
+if (stickyCta) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            stickyCta.classList.add('visible');
+        } else {
+            stickyCta.classList.remove('visible');
+        }
+    });
+}
+
 // ===== Back to Top =====
 document.getElementById('back-to-top').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
