@@ -136,15 +136,27 @@ createParticles();
 const toggleBtns = document.querySelectorAll('.toggle-btn');
 const pricingTabs = document.querySelectorAll('.pricing-tab');
 
+function switchTab(tabName) {
+    toggleBtns.forEach(b => b.classList.remove('active'));
+    toggleBtns.forEach(b => { if (b.getAttribute('data-tab') === tabName) b.classList.add('active'); });
+    pricingTabs.forEach(t => t.classList.remove('active'));
+    const targetTab = document.getElementById('tab-' + tabName);
+    if (targetTab) targetTab.classList.add('active');
+}
+
 toggleBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        const tab = btn.getAttribute('data-tab');
-        
-        toggleBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        
-        pricingTabs.forEach(t => t.classList.remove('active'));
-        document.getElementById('tab-' + tab).classList.add('active');
+        switchTab(btn.getAttribute('data-tab'));
+    });
+});
+
+// ===== Service Links -> Pricing Tabs =====
+document.querySelectorAll('.service-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tab = link.getAttribute('data-tab');
+        if (tab) switchTab(tab);
+        document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
     });
 });
 
@@ -253,10 +265,20 @@ contactForm.addEventListener('submit', (e) => {
     
     if (!name || !email || !message) return;
     
-    // Simulate submit
+    // Build mailto link
+    const subject = encodeURIComponent('Mesaj de la ' + name + ' - AQUALEX Website');
+    const body = encodeURIComponent(
+        'Nume: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Telefon: ' + (phone || 'Nespecificat') + '\n\n' +
+        'Mesaj:\n' + message
+    );
+    window.location.href = 'mailto:contact@aqualex.ro?subject=' + subject + '&body=' + body;
+    
+    // Visual feedback
     const btn = contactForm.querySelector('button[type="submit"]');
     const originalContent = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check"></i> <span>Mesaj trimis!</span>';
+    btn.innerHTML = '<i class="fas fa-check"></i> <span>Se deschide email-ul...</span>';
     btn.style.background = '#10b981';
     btn.disabled = true;
     
